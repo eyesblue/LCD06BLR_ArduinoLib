@@ -5,10 +5,9 @@ LCD06BLR library
 =====
 
 The project provide a arduino library for LCD06BLR which use HT1621 drive LCD.
-I bought the displayer from china, it drive with Holtek HT1621, there are 6 7-segment for display number,
-5 dot between every number and 2 colon separate every 2 number, there are 8 arrows locate side of
-display(4 at right and 4 at left side), I didn't implement these arrows, you can reference develop.ino
-if you need implement it.
+I bought the displayer from china, there are 6 7-segment for display number, 5 dot between every number 
+and 2 colon separate every 2 number, there are 8 arrows locate side of display(4 at right and 4 at left 
+side), I didn't implement these arrows, you can reference develop.ino if you need implement it.
 
 Special variable - opposite
 =====
