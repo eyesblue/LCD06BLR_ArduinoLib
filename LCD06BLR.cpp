@@ -1,13 +1,12 @@
 /**
  * \file LCD06BLR.cpp
- * \brief Implementation of a class for dealing with the Holtek HT1621 chip, modify from Maczinga's code(https://macduino.blogspot.com/2015/02/HT1621.html).
+ * \brief Implementation of a class for dealing with the Holtek HT1621 chip, See https://github.com/eyesblue/LCD06BLR_ArduinoLib for more details.
  * \author Eyes Blue
  * \date 23 November 2019
  * \version 1.0
  * \copyright BSD license, check the License page on the blog for more information. All this text must be included in any redistribution.
  *  <br><br>
- *  See https://github.com/eyesblue/LCD06BLR_ArduinoLib for more details.
- *
+ *  modify from Maczinga's code(https://macduino.blogspot.com/2015/02/HT1621.html).
  */
 
 #include "LCD06BLR.h"
@@ -183,6 +182,13 @@ void LCD06BLR::read(uint8_t address, uint8_t *data, uint8_t cnt)
 /*
 	Below functions create by Eyes Blue.
 */
+void LCD06BLR::clear()
+{
+	register uint8_t i=0;
+	for (; i < 16; i++)
+		write(i, 0);
+}
+
 void LCD06BLR::setNum(uint8_t index, uint8_t num)
 {
   for (int i = 0; i < 8; i++) {
