@@ -285,6 +285,11 @@ public:
      */
     void read(uint8_t address, uint8_t *data, uint8_t cnt);
 	/**
+     * \fn void clear()
+     * \brief Clear anything of LCD.
+     */
+	void clear();
+	/**
      * \fn void setNum(uint8_t index, uint8_t num)
      * \brief Set the number to the index of LCD.
      * @param Index of the 6 number of LCD.
