@@ -29,4 +29,4 @@ The library is modify from Maczinga's code(https://macduino.blogspot.com/2015/02
 USAGE NOTES
 ---
 
-Just put the files on a TM1628 directory under "arduino/libraries" on your arduino IDE instalation
+Just put the files on a LCD06BLR directory under "arduino/libraries" on your arduino IDE instalation.
